@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Lag Cat
 
 You can use the [editor on GitHub](https://github.com/lagcat97/lagcat97.github.com/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -22,6 +22,8 @@ Syntax highlighted code block
 2. List
 
 **Bold** and _Italic_ and `Code` text
+[Lag Cat Youtube Channel](https://www.youtube.com/channel/UCxT7eq_heyFP68V5D8-TxzQ)
+[Merch](https://my-store-caf080-2.creator-spring.com/)
 
 [Link](url) and ![Image](src)
 ```
