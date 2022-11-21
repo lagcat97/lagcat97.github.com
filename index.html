@@ -3,13 +3,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lag-Cat.com</title>
+    <style type="text/css">
+        .container {
+            overflow: hidden;
+            position: fixed;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translate3d(2000px, 0, 0);
+            }
+            100% {
+                transform: translate3d(-266px, 0, 0); /* The image width */
+            }
+        }
+        .sliding-background {
+            background: url("cloud-1.png") no-repeat;
+            opacity: 50%;
+            height: 115px;
+            width: 2624px;
+            animation: slide 8s linear infinite;
+        }
+    </style>
 </head>
 <body>
-<div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-red-500 p-6 sm:py-12">
-    <div class="relative flex-1 bg-sky-300 rounded-xl border-black border-4 p-4 bg-center
-bg-no-repeat"
+<div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-red-500 p-6 sm:py-12 ">
+
+    <div class="relative flex-1 bg-sky-300 rounded-xl border-black border-4 m-4 bg-center
+bg-no-repeat "
     >
-        <div class="w-min">
+
+        <div class="w-min p-4">
             <a href="https://www.youtube.com/channel/UCxT7eq_heyFP68V5D8-TxzQ" target="_blank">
                 <div class="bg-red-500 rounded-xl p-4 mb-4 border-black border-2 shadow-lg hover:bg-red-300  hover:shadow-none">
                     Videos
@@ -21,10 +45,13 @@ bg-no-repeat"
                 </div>
             </a>
         </div>
+        <div class="container">
+            <div class="sliding-background"></div>
+        </div>
     </div>
-    <div class="fixed top-20 right-[50px] opacity-75">
-        <img src="cloud-1.png">
-    </div>
+<!--    <div class="fixed top-20 right-[50px] opacity-75 sliding-background" >-->
+<!--        <img src="cloud-1.png">-->
+<!--    </div>-->
 
 </div>
 <script src="bundle.js"></script>
